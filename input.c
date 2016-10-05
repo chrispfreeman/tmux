@@ -1841,7 +1841,7 @@ input_exit_osc(struct input_ctx *ictx)
 	switch (option) {
 	case 0:
 	case 2:
-		screen_set_title(ictx->ctx.s, p);
+		//screen_set_title(ictx->ctx.s, p);
 		server_status_window(ictx->wp->window);
 		break;
 	case 12:
@@ -1875,7 +1875,7 @@ input_exit_apc(struct input_ctx *ictx)
 		return;
 	log_debug("%s: \"%s\"", __func__, ictx->input_buf);
 
-	screen_set_title(ictx->ctx.s, ictx->input_buf);
+	//screen_set_title(ictx->ctx.s, ictx->input_buf);
 	server_status_window(ictx->wp->window);
 }
 
